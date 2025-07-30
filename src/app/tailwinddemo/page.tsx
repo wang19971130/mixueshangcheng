@@ -1,7 +1,8 @@
 "use client"
 import { useState } from 'react'
-
+import meinvImg from '../../../public/images/meinv.png'
 import React from 'react'
+import Image from "next/image"
 
 export default function Page() {
 
@@ -16,13 +17,14 @@ export default function Page() {
                 sm:grid-cols-1 
                 md:grid-cols-2 
                 lg:grid-cols-3 
+                xl:grid-cols-4
                 gap-2'>
 
         {
             countArray.map((i)=>{
                 return   <div key={i} className='c h-100 shadow  rounded-lg '>
             <div className='w-full h-5/12 text-white font-bold rounded-t-lg flex items-center justify-center bg-gradient-to-r from-blue-500  to-purple-600 ' >
-            图
+             <Image className='w-full h-full object-cover' src={meinvImg} alt="" />
             </div>
           <div className='w-auto h-7/12 px-5 '>
            <div className='w-auto text-xs flex font- justify-between pt-4  '>

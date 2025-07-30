@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import aImg from "../../public/images/a.jpg"
+import aImg from "../../../public/images/b.jpg"
 
 export default function Page() {
 
@@ -14,7 +14,7 @@ export default function Page() {
         </div>
           <div className='flex w-auto h-full justify-center items-center'>
             <h1 className='text-white text-5xl'>
-              不知细叶谁裁出,二月春风似剪刀.
+              曾经沧海难为水,除却巫山不是云.
             </h1>
         </div>
     </div>
